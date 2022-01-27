@@ -1,4 +1,3 @@
-
 @extends('layouts.admin')
 
 @section('titulo')
@@ -222,19 +221,13 @@
         total=0;
         subtotal=[];
         $("#guardar").hide();
-
  $("#pId_Producto").change(mostrarValores);
-
 function mostrarValores() {
     datosProducto = document.getElementById('pId_Producto').value.split('_');
     $("#pPrecioUnitario").val(datosProducto[1]);
     
 }
-
-
-
        
-
    
    
         function agregar()
@@ -249,7 +242,6 @@ function mostrarValores() {
             id_descuentoval=$("#pid_descuento option:selected").text();
             id_isv=$("#pid_isv").val();
             id_isvval=$("#pid_isv option:selected").text();
-
             if(idProducto!="" && PrecioUnitario!="" && Cantidad!="" && Cantidad>0 && id_descuento!="" && id_isv!="")
             {
                 
@@ -272,7 +264,6 @@ function mostrarValores() {
             }
         
         
-
         function limpiar(){
             $("#pId_Producto").val("");
             $("#pPrecioUnitario").val("");
@@ -281,7 +272,6 @@ function mostrarValores() {
             $("#pid_isv").val("");
             
         } 
-
         function evaluar(){
             if(total>0)
             {
@@ -289,17 +279,12 @@ function mostrarValores() {
             }else{
                 $("#bt_guardar").hide();
             }
-
         }
-
         function eliminar(index) {
             total=total-subtotal[index];
             $("#total").html("L. "+total);
             $("#fila" + index).remove();
             evaluar();
-
-
-
         }
     </script>
 

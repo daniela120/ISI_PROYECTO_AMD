@@ -15,7 +15,7 @@
             <div class="row">
                     <div class="col-lg-12 form-group">
                         <div>
-                            <label for="Descripcion" class="form-fields"> Descripción</label>
+                            <label for="Descripcion" class="form-fields"> Descripció</label>
                             <input type="text" class="form-control {{$errors->has('Descripcion') ? 'is-invalid' : '' }}"
                              rows="3" name="Descripcion" id="Descripcion"
                             value="{{old('Descripcion')}}" placeholder=''>

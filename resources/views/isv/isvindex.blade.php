@@ -75,26 +75,26 @@
     } 
     </script>
     
-     
-
-<!-- para validaciones-->
-@if(!$errors->isEmpty())
-@if($errors->has('post'))
-    <script>
-        $(function () {
-            $('#createMdl').modal('show');
-        });
-    </script>
   
-@else
-    <script>
-        $(function () {
-            $('#editMdl').modal('show');
-        });
-    </script>
-
-@endif
-@endif
+    
+    <!-- para validaciones-->
+    @if(!$errors->isEmpty())
+        @if($errors->has('post'))
+            <script>
+                $(function () {
+                    $('#createMdl').modal('show');
+                });
+            </script>
+          
+        @else
+            <script>
+                $(function () {
+                    $('#editMdl').modal('show');
+                });
+            </script>
+        
+        @endif
+    @endif
 @endpush
 
 

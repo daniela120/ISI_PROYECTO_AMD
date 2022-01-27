@@ -26,17 +26,17 @@
                     <thead>
                     <tr>
                         
-                            <th class="text-center">Id </th>
-                            <th class="text-center">Nombre</th>
-                            <th class="text-center">Apellido</th>
-                            <th class="text-center">Fecha de Nacimiento</th>
-                            <th class="text-center">Fecha de Contratación</th>                            
-                            <th class="text-center">Cargo</th>
-                            <th class="text-center"> Teléfono</th>
-                            <th class="text-center">Usuario</th>
-                            <th class="text-center">Turno</th>                                                     
-                            <th class="text-center">Documento</th>
-                            <th class="text-center">Tipo Doc</th>  
+                            <th class="text-center"><font size=2>Id </th>
+                            <th class="text-center"><font size=2>Nombre</th>
+                            <th class="text-center"><font size=2>Apellido</th>
+                            <th class="text-center"><font size=2>Fecha de Nacimiento</th>
+                            <th class="text-center"><font size=2>Fecha de Contratación</th>                            
+                            <th class="text-center"><font size=2>Cargo</th>
+                            <th class="text-center"> <font size=2>Teléfono</th>
+                            <th class="text-center"><font size=2>Usuario</th>
+                            <th class="text-center"><font size=2>Turno</th>                                                     
+                            <th class="text-center"><font size=2>Documento</th>
+                            <th class="text-center"><font size=2>Tipo Doc</th>  
                             
                         </tr>
                     </thead>
@@ -45,19 +45,19 @@
                         @foreach($probando as $empleado)
                         <tr>
                         
-                            <td>{{$empleado->id}}</td>
-                                <td>{{$empleado->Nombre}}</td>
-                                <td>{{$empleado->Apellido}}</td>
-                                <td>{{$empleado->FechaNacimiento}}</td>
-                                <td>{{$empleado->FechaContratacion}}</td>
+                                <td><font size=1>{{$empleado->id}}</td>
+                                <td><font size=1>{{$empleado->Nombre}}</td>
+                                <td><font size=1>{{$empleado->Apellido}}</td>
+                                <td><font size=1>{{$empleado->FechaNacimiento}}</td>
+                                <td><font size=1>{{$empleado->FechaContratacion}}</td>
                                 
-                                <td>{{$empleado->Cargo}}</td>
-                                <td>{{$empleado->Telefono}}</td>
-                                <td>{{$empleado->name}}</td>
-                                <td>{{$empleado->TipoTurno}}</td>
+                                <td><font size=1>{{$empleado->Cargo}}</td>
+                                <td><font size=1>{{$empleado->Telefono}}</td>
+                                <td><font size=1>{{$empleado->name}}</td>
+                                <td><font size=1>{{$empleado->TipoTurno}}</td>
                                                                
-                                <td>{{$empleado->Documento}}</td>
-                                <td>{{$empleado->TipoDocumento}}</td>
+                                <td><font size=1>{{$empleado->Documento}}</td>
+                                <td><font size=1>{{$empleado->TipoDocumento}}</td>
                                     
                         </tr>
                         @endforeach
